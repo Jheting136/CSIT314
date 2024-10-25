@@ -1,0 +1,42 @@
+<!-- login.component.html -->
+<div class="login-container">
+  <div class="card login-card">
+    <div class="center title">Welcome to Car Insurance</div>
+    <div class="center smalltitle">Login</div>
+    <div>
+      <form (ngSubmit)="onLogin()">
+        <div class="full-width">
+          <label>Email</label>
+          <input
+            id="email"
+            matInput
+            type="email"
+            placeholder="Enter your email"
+            required
+            [(ngModel)]="email"
+            name="email"
+          >
+        </div>
+        <div class="full-width">
+          <label>Password</label>
+          <input
+            id="password"
+            matInput
+            type="password"
+            placeholder="Enter your password"
+            required
+            [(ngModel)]="password"
+            name="password"
+          >
+        </div>
+        <button class="full-width">Login</button>
+      </form>
+    </div>
+    <div class="center small" *ngIf="loginError">
+      <p class="error-message">{{ loginError }}</p>
+    </div>
+    <div class="center small">
+      <a routerLink="/register">I don't have an account</a>
+    </div>
+  </div>
+</div>
