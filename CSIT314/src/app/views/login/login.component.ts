@@ -2,7 +2,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-
 import { User } from '../../models/user.model';
 import { LoginController } from '../../controllers/login.controller';
 
@@ -20,17 +19,22 @@ export class LoginComponent {
 
   constructor(private loginController: LoginController) {}
 
-  onLogin() {
+  // Modify the onLogin method to handle async user authentication
+  async onLogin() {
     const user = new User(this.email, this.password, 'agent', ''); // Default role
-    const authenticatedUser = this.loginController.authenticateUser(user);
 
-    if (authenticatedUser) {
-      this.loginError = '';
-      console.log('Login successful for:', authenticatedUser.name);
-      // You can now access authenticatedUser.role and authenticatedUser.name
-      // Here you might want to navigate to the respective dashboard
-    } else {
-      this.loginError = 'Invalid email or password';
+    try {
+      const authenticatedUser = await this.loginController.authenticateUser(user);
+      if (authenticatedUser) {
+        this.loginError = ''; // Clear error message if login is successful
+        console.log('Login successful for:', authenticatedUser.name);
+        // Optionally, store user data in session/localStorage and navigate to the dashboard
+      } else {
+        this.loginError = 'Invalid email or password';
+      }
+    } catch (error) {
+      console.error('Error during login:', error);
+      this.loginError = 'An error occurred during login';
     }
   }
 }

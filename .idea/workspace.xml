@@ -4,41 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="679c1739-4f57-46c2-ba06-087767bfd1a7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/.vscode/extensions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/.vscode/launch.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/.vscode/tasks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/src/app/app.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/src/app/app.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/src/app/app.routes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/src/app/controllers/login.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/src/app/models/user.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/src/app/services/auth.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/src/app/views/login/login.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/src/app/views/login/login.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/src/app/views/login/login.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/src/app/views/login/login.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/src/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSIT314/tsconfig.spec.json" afterDir="false" />
+    <list default="true" id="679c1739-4f57-46c2-ba06-087767bfd1a7" name="Changes" comment="First commit woo hoo">
+      <change afterPath="$PROJECT_DIR$/CSIT314/src/app/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSIT314/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/CSIT314/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSIT314/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/CSIT314/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSIT314/src/app/controllers/login.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CSIT314/src/app/controllers/login.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSIT314/src/app/models/user.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CSIT314/src/app/models/user.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSIT314/src/app/services/auth.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSIT314/src/app/views/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CSIT314/src/app/views/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSIT314/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/CSIT314/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +33,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2nucB9W4WWQMl6qOD4hN7rrg7gt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -76,7 +51,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Elliot/SIM/CSIT314"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -95,9 +71,34 @@
       <option name="presentableId" value="Default" />
       <updated>1729826313148</updated>
     </task>
+    <task id="LOCAL-00001" summary="First commit woo hoo">
+      <option name="closed" value="true" />
+      <created>1729859612963</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729859612963</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.ts" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="First commit woo hoo" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit woo hoo" />
   </component>
 </project>
