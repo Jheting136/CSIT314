@@ -4,16 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="679c1739-4f57-46c2-ba06-087767bfd1a7" name="Changes" comment="First commit woo hoo">
-      <change afterPath="$PROJECT_DIR$/CSIT314/src/app/db.js" afterDir="false" />
+    <list default="true" id="679c1739-4f57-46c2-ba06-087767bfd1a7" name="Changes" comment="UPDATED READ ME TO BE MORE SPECIFIC">
+      <change afterPath="$PROJECT_DIR$/CSIT314/backend/db.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSIT314/backend/user.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSIT314/src/app/views/test/login.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSIT314/src/app/views/test/login.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSIT314/src/app/views/test/login.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSIT314/src/app/views/test/login.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSIT314/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/CSIT314/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSIT314/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/CSIT314/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSIT314/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CSIT314/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSIT314/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CSIT314/src/app/app.routes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSIT314/src/app/controllers/login.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CSIT314/src/app/controllers/login.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSIT314/src/app/db.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/CSIT314/src/app/models/user.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CSIT314/src/app/models/user.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSIT314/src/app/services/auth.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSIT314/src/app/views/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSIT314/src/app/views/login/login.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSIT314/src/app/views/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CSIT314/src/app/views/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSIT314/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/CSIT314/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSIT314/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CSIT314/src/main.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,10 +58,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Elliot/SIM/CSIT314"
+    "last_opened_file_path": "D:/Elliot/SIM/CSIT314/CSIT314/src/app/views/test"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Elliot\SIM\CSIT314\CSIT314\src\app\views\test" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Elliot\SIM\CSIT314\CSIT314\src\app\views" />
       <recent name="D:\Elliot\SIM\CSIT314\src\app\components\views\login" />
@@ -79,7 +88,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729859612963</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="needs db implementation">
+      <option name="closed" value="true" />
+      <created>1731342903048</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731342903048</updated>
+    </task>
+    <task id="LOCAL-00003" summary="UPDATED READ ME TO BE MORE SPECIFIC">
+      <option name="closed" value="true" />
+      <created>1731343608455</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731343608455</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -99,6 +124,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First commit woo hoo" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit woo hoo" />
+    <MESSAGE value="needs db implementation" />
+    <MESSAGE value="UPDATED READ ME TO BE MORE SPECIFIC" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATED READ ME TO BE MORE SPECIFIC" />
   </component>
 </project>

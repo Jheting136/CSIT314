@@ -1,13 +1,17 @@
 /* login.component.css */
-.login-container {
+/*.login-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
+}*/
 
 .login-card {
   width: 450px;
   padding: 16px;
+}
+.login-container {
+  border: 1px solid red;
+  padding: 20px;
 }

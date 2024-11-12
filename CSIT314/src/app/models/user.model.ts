@@ -1,71 +1,33 @@
-// src/app/models/user.model.ts
-import bcrypt from 'bcryptjs';  // Import bcrypt for password encryption
-import mysql from 'mysql2/promise';  // Use mysql2/promise for promise-based API
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 
-// Async function to create a connection
-async function createDbConnection(): Promise<mysql.Connection> {
-  return mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'root',
-    database: 'acc_db'
-  });
-}
-
+@Injectable({
+  providedIn: 'root',
+})
 export class User {
-  constructor(
-    public email: string,
-    public password: string,
-    public role: string,
-    public name: string,
-    public hp?: string,
-    public address?: string
-  ) {}
+  private apiUrl = 'http://localhost/CSIT314/backend/user.php'; // Change this to your backend URL
 
-  // Method to get a user from the database
-  async getUser(user: User): Promise<User | null> {
-    let connection: mysql.Connection | null = null;
-    try {
-      // Create and open the connection
-      connection = await createDbConnection();
+  constructor(private http: HttpClient) {}
 
-      // Execute query and fetch results
-      const [results] = await connection.execute(
-        'SELECT * FROM user_acc WHERE email = ?',
-        [user.email]
-      );
+  getUser(email: string, password: string): Observable<any> {
+    const body = { action: 'getUser', email, password };
+    return this.http.post(this.apiUrl, body);
+  }
 
-      // If the user is found, validate the password
-      if (results.length > 0) {
-        const dbUser = results[0];
+  addUser(user: { email: string; password: string; role: string; name: string; hp?: string; address?: string }): Observable<any> {
+    return this.http.post(this.apiUrl, user);
+  }
 
-        // Compare the password from the database
-        const isPasswordValid = await bcrypt.compare(user.password, dbUser.password);
-        if (isPasswordValid) {
-          // Return the user if valid
-          const foundUser = new User(
-            dbUser.email,
-            dbUser.password,
-            dbUser.role,
-            dbUser.name,
-            dbUser.phone_number,
-            dbUser.address
-          );
-          return foundUser;
-        } else {
-          return null;  // Invalid password
-        }
-      } else {
-        return null;  // User not found
-      }
-    } catch (err) {
-      console.error('Error:', err);
-      return null;  // Return null if an error occurs
-    } finally {
-      // Ensure to close the connection
-      if (connection) {
-        await connection.end();
-      }
-    }
+  modifyUser(user: { email: string; role: string; name: string; hp?: string; address?: string }): Observable<any> {
+    return this.http.put(this.apiUrl, user);
+  }
+
+  deleteUser(email: string): Observable<any> {
+    const options = {
+      headers: { 'Content-Type': 'application/json' },
+      body: { email },
+    };
+    return this.http.delete(this.apiUrl, options);
   }
 }
